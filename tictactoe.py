@@ -6,6 +6,9 @@ GRAY  = ( 60,  60,  60)
 WHITE = (255, 255, 255)
 GREEN = (  0, 200,  20)
 
+clock = pygame.time.Clock()
+FPS = 15
+
 
 def game_win(gameboard):
     
@@ -270,7 +273,7 @@ def main():
             # screen.blit(mouse_text, (300, 20))
             
             pygame.display.update()
-        
+            clock.tick(FPS)
 
 
 if __name__ == "__main__":
